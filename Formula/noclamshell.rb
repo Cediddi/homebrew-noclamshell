@@ -14,8 +14,6 @@ class Noclamshell < Formula
     run_type :interval
     interval 5
     throttle_interval 5
-    log_path var/"log/noclamshell.log"
-    error_log_path var/"log/noclamshell.log"
   end
 
   test do
