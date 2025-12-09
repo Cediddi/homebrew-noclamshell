@@ -12,7 +12,10 @@ class Noclamshell < Formula
     run opt_bin/"noclamshell"
     keep_alive true
     run_type :interval
-    interval 1
+    interval 5
+    throttle_interval 5
+    log_path var/"log/noclamshell.log"
+    error_log_path var/"log/noclamshell.log"
   end
 
   test do
